@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	huruf := "a"
+	huruf := "u"
 
 	switch huruf {
 	case "a", "i", "u", "e", "o":
