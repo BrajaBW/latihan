@@ -5,10 +5,10 @@ import(
 	"latihan-package-access-modifier/calculator"
 )
 
-func multiply(){
-	
-}
+
+
 
 func main() {
-	
+	penjulahan := calculator.Add(5,5)
+	fmt.Println(penjulahan)
 }
