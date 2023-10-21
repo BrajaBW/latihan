@@ -4,13 +4,22 @@ import (
 	"fmt"
 )
 
-func kata() (a string) {
-	a = "Mobil"
-	return a
+// func kata() (a string) {
+// 	a = "Mobil"
+// 	return a
+// }
+
+// func cetak(b string) string {
+// 	return b
+// }
+
+func combineString(str1 string, str2 string) string {
+	return "Mobil " + str1 + " Berwarna " + str2
 }
 
-func cetak(b string) string {
-	return b
+func cetak(str3 string) {
+	fmt.Println(str3)
+
 }
 
 func main() {
@@ -19,10 +28,13 @@ func main() {
 	car["name"] = "BWM"
 	car["color"] = "Black"
 
-	for _, mobil := range car {
-		cetak(mobil)
-	}
+	cetaklangsung := combineString(car["name"], car["color"])
+	cetak(cetaklangsung)
 
-	fmt.Println(kata(), cetak(car["name"]), cetak(car["color"]))
+	// for _, mobil := range car {
+	// 	cetak(mobil)
+	// }
+
+	// fmt.Println(kata(), cetak(car["name"]), cetak(car["color"]))
 
 }
