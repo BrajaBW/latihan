@@ -9,7 +9,7 @@ func printFibonacciSeries(int){
 	fmt.Printf("%d %d", a, b)
 	for true{
 	   c = b
-	   b = a + b
+	   b = b+ 2
 	   if b >= 100{
 		  fmt.Println()
 		  break
