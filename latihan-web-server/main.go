@@ -15,7 +15,7 @@ func index(w http.ResponseWriter, r *http.Request) {
 	fmt.Println("index called.....")
 	halaman := "ini Adalah halaman index"
 	w.Write([]byte(halaman))
-}
+}e
 
 func handleRoute() {
 	http.HandleFunc("/about", about)
